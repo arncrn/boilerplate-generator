@@ -13,3 +13,5 @@ example:
 ```
 bin/generate.sh express-typescript my-new-app
 ```
+
+If the boilerplate has a `package.lock` file, then it can be installed with `yarn install`

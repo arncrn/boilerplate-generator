@@ -18,6 +18,16 @@
         "react"
     ],
     "rules": {
+        "comma-dangle": "off",
+        "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+        "@typescript-eslint/space-before-function-paren": "off",
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-confusing-void-expression": "off",
+        "react/no-unescaped-entities": "off",
+        "no-unexpected-multiline": "error",
+        "no-tabs": "off"
     },
     "settings": {
         "import/resolver": {

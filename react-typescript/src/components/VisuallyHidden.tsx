@@ -1,18 +1,25 @@
 import React from 'react';
+import type { ReactElement } from 'react';
 import styled from 'styled-components';
 
-const VisuallyHidden = ({ children, ...delegated }) => {
+/*
+  Component to visually hide data, but continue to show it to screen readers.
+  To see what is hidden, hold the "alt" key ("option" on mac).
+*/
+const VisuallyHidden = ({ children, ...delegated }: any): ReactElement => {
   const [forceShow, setForceShow] = React.useState(false);
 
   React.useEffect(() => {
     if (process.env.NODE_ENV !== 'production') {
-      const handleKeyDown = (ev) => {
-        if (ev.key === 'Alt') {
+      const handleKeyDown = (
+        event: KeyboardEvent,
+      ): void => {
+        if (event.key === 'Alt') {
           setForceShow(true);
         }
       };
 
-      const handleKeyUp = () => {
+      const handleKeyUp = (): void => {
         setForceShow(false);
       };
 

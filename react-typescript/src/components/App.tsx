@@ -10,6 +10,7 @@ import {
 } from 'react-feather';
 import * as Tooltip from '@radix-ui/react-tooltip';
 
+import MaxWidthWrapper from './MaxWidthWrapper';
 import MediaPlayer from './MediaPlayer';
 import Toasty from './Toasty';
 import VisuallyHidden from './VisuallyHidden';
@@ -101,7 +102,9 @@ function App(): ReactElement {
           XCircle Icon
         </IconButton>
 
-        <FrequentlyAskedQuestions data={faqData} />
+        <MaxWidthWrapper>
+          <FrequentlyAskedQuestions data={faqData} />
+        </MaxWidthWrapper>
 
         <button onClick={setShowHiddenValue}>
           Click me to show the hidden value

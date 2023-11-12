@@ -25,6 +25,7 @@
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-confusing-void-expression": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
         "react/no-unescaped-entities": "off",
         "no-unexpected-multiline": "error",
         "no-tabs": "off"

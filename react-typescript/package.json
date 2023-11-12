@@ -36,16 +36,16 @@
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "latest",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "latest",
-    "typescript": "^4.0.0"
+    "typescript": "*"
   },
   "browserslist": {
     "production": [

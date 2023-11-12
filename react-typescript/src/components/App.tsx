@@ -28,6 +28,7 @@ import Asterisk from './Asterisk';
 import ToastProvider from './ToastProvider';
 import FloatingText from './FloatingText';
 import PriceDisplay from './PriceDisplay';
+import Spinner from './Spinner';
 // import Portal from './Portal'; // component to create a custom portal. Typically used with things like tooltips and modals.
 
 import useMousePosition from '../hooks/use-mouse-position';
@@ -62,6 +63,7 @@ function App(): ReactElement {
       <Wrapper>
         <NavHeader />
         <LoginHeader />
+        <Spinner />
         <FloatingText key={floatingTextKey}>
           <p>I re-render as my key is changed</p>
         </FloatingText>
